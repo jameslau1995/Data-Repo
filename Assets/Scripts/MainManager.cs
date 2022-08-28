@@ -82,12 +82,12 @@ public class MainManager : MonoBehaviour
     }
     void RecordPoint()
     {
-        //if(m_Points > b_Points)
-        //{
+        if(m_Points > b_Points)
+        {
             b_Points = m_Points;
             b_Name = playerNameDataReplace;
             SaveScoreData();
-        //}
+        }
     }
 
     public void GameOver()
